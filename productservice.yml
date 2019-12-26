@@ -1,0 +1,32 @@
+server:
+  port: 2200
+spring:
+  application:
+    name: product-service
+  security:
+    user:
+      name: actuator
+      password: actuator
+#      roles: ACTUATOR_ADMIN
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    security:
+      basic:
+        user: actuator
+        password: actuator
+    service-url:
+      defaultZone : http://localhost:8260/eureka
+#      defaultZone : http://${eureka.client.security.basic.user}:${eureka.client.security.basic.password}@localhost:8260/eureka
+#      defaultZone : http://cd826:pwd@localhost:8260/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+feign:
+  hystrix:
+    enabled: true
