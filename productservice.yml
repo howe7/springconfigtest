@@ -8,6 +8,9 @@ spring:
       name: actuator
       password: actuator
 #      roles: ACTUATOR_ADMIN
+  sleuth:
+    sampler:
+      probability: 1.0  #采样频率
 eureka:
   instance:
     prefer-ip-address: true
