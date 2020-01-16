@@ -19,6 +19,9 @@ spring:
         input: 
           destination: test #消息中间件的主题名
           content-type: application/json
+        userinput: #自定义消息通道
+          destination: test #消息中间件的主题名
+          content-type: application/json
       kafka:
         binder:
           brokers: localhost:9092         #Kafka的消息中间件服务器
