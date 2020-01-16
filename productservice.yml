@@ -13,6 +13,17 @@ spring:
   sleuth:
     sampler:
       probability: 1.0  #采样频率
+  cloud:
+    stream:
+      bindings:
+        input: 
+          destination: test #消息中间件的主题名
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092         #Kafka的消息中间件服务器
+          #zk-nodes: localhost:2181        #Zookeeper的节点，如果集群，后面加,号分隔
+          #auto-create-topics: true        #如果设置为false,就不会自动创建Topic 有可能你Topic还没创建就直接调用了。
 eureka:
   instance:
     prefer-ip-address: true
