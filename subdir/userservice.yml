@@ -37,4 +37,4 @@ management:
       exposure:
         include: "*"
 howell:
-  test: '测试1'
+  test: '测试2'
