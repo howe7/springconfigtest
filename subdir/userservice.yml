@@ -17,7 +17,7 @@ spring:
       bindings:
         output: 
           destination: test #消息中间件的主题名
-          content-type: application/json;charset=utf-8
+          content-type: application/json
       kafka:
         binder:
           brokers: localhost:9092         #Kafka的消息中间件服务器
