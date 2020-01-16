@@ -31,5 +31,10 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone : http://localhost:8260/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 howell:
   test: '测试1'
