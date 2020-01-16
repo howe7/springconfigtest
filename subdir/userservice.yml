@@ -15,8 +15,9 @@ spring:
   cloud:
     stream:
       bindings:
-        destination: test #消息中间件的主题名
-        content-type: application/json
+        output: 
+          destination: test #消息中间件的主题名
+          content-type: application/json
       kafka:
         binder:
           brokers: localhost:9092         #Kafka的消息中间件服务器
