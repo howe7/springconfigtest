@@ -32,4 +32,4 @@ eureka:
     service-url:
       defaultZone : http://localhost:8260/eureka
 howell:
-  test: '测试3'
+  test: '测试4'
