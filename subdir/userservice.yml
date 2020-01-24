@@ -36,5 +36,9 @@ management:
     web:
       exposure:
         include: "*"
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9000/user
 howell:
   test: '测试3'
