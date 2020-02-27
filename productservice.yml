@@ -51,11 +51,11 @@ feign:
     enabled: true
 security:
   oauth2:
-#    client:
+    client:
 #      client-id: AppID
 #      client-secret: secretID
-#      user-authorization-uri: http://localhost:9000/oauth/authorize
-#      access-token-uri: http://localhost:9000/oauth/token
+      user-authorization-uri: http://localhost:9000/oauth/authorize
+      access-token-uri: http://localhost:9000/oauth/token
     resource:
 #      id: AppID
       user-info-uri: http://localhost:9000/user
