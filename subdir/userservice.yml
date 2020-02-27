@@ -38,15 +38,15 @@ management:
         include: "*"
 security:
   oauth2:
-    client:
-      client-id: AppID
-      client-secret: secretID
-      user-authorization-uri: http://localhost:9000/oauth/authorize
-      access-token-uri: http://localhost:9000/oauth/token
+#    client:
+#      client-id: AppID
+#      client-secret: secretID
+#      user-authorization-uri: http://localhost:9000/oauth/authorize
+#      access-token-uri: http://localhost:9000/oauth/token
     resource:
-      id: AppID
+#      id: AppID
       user-info-uri: http://localhost:9000/user
-    authorization:
-      check-token-access: http://localhost:9000/oauth/check_token
+#    authorization:
+#      check-token-access: http://localhost:9000/oauth/check_token
 howell:
   test: '测试3'
