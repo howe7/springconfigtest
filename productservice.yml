@@ -16,9 +16,9 @@ spring:
   cloud:
     stream:
       bindings:
-#         input:  #默认消息通道名
-#           destination: test #消息中间件的主题名
-#           content-type: application/json
+        input:  #默认消息通道名
+          destination: test #消息中间件的主题名
+          content-type: application/json
         user_input: #自定义消息通道
           destination: test #消息中间件的主题名
           content-type: application/json
